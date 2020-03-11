@@ -1,0 +1,307 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: rgb(35, 44, 87);
+    --secondary-color: rgb(230, 111, 7);
+    --bc-color: rgb(225, 228, 242);
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Montserrat', sans-serif;
+
+    --fw-reg: 400;
+    --fw-bold: 600;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1rem;
+}
+
+/* General styling */
+:focus {
+    outline: none;
+}
+
+body {
+    background: var(--bc-color);
+    color: var(--primary-color);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    height: 100%;
+    /* margin: 0 auto; */
+}
+
+.link {
+    text-decoration: none;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    letter-spacing: 2px;
+    transition: transform 200ms ease-in-out;
+    background: var(--secondary-color);
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    /* margin-top: 2.5em; */
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* Typograpy */
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Navbar styling */
+header {
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    position: fixed;
+    background-color: var(--primary-color);
+
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 400ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--secondary-color);
+
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.nav__link:hover {
+    color: var(--bc-color);
+}
+
+
+
+.nav-toggle {
+    background: transparent;
+    border: 0;
+    padding: .5em;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000;
+}
+
+.nav-open .nav {
+    transform: translateX(0%);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
+/* Hamburger icon */
+.hamburger {
+    display: block;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background-color: var(--secondary-color);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.hamburger::before {
+    top: 6px
+}
+
+.hamburger::after {
+    bottom: 6px
+}
+
+.nav__list {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.logo {
+    /* margin: 10px;
+    padding: 10px; */
+    width: 100px;
+}
+
+.logo img {
+    height: 70px;
+    /* width: 50%; */
+}
+
+/* Intro styling */
+
+.intro {
+    padding-bottom: 22em;
+}
+
+.intro .home {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    text-align: center;
+    padding-top: 5em;
+}
+
+.home h2 {
+    /* grid-row: 1/2; */
+    font-weight: var(--fw-reg);
+    /* margin-bottom: 5px; */
+    align-self: end;
+}
+
+.home h3 {
+    /* grid-row: 2/4; */
+    /* background-color: rgb(185, 230, 147); */
+    align-self: center;
+    font-family: var(--ff-secondary);
+}
+
+.home .social {
+    align-self: start;
+}
+
+.social a {
+    padding: .5em;
+}
+
+.intro #job {
+    display: inline-block;
+    background-color: rgb(138, 122, 117);
+    transform-origin: 35px 45px;
+    transform: rotate(-10deg);
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+
+/* my services */
+
+.my-services {
+    background-color: var(--primary-color);
+    background-image: url("./image/nesa-by-makers-tWjzmNXKup4-unsplash.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--bc-color);
+    text-align: center;
+}
+
+.services__title {
+    color: var(--secondary-color);
+    position: relative;
+}
+
+.services__title::after {
+    content: "";
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    color: red;
+
+}
+
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.services {
+    margin-bottom: 4em;
+}
+
+@media (min-width: 400px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service+.service {
+        margin-left: 2em;
+    }
+}
+
+/* Project styling */
