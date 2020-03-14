@@ -257,41 +257,246 @@ header {
 
 
 /* my services */
-
-.my-services {
+.about {
     background-color: var(--primary-color);
     background-image: url("./image/nesa-by-makers-tWjzmNXKup4-unsplash.jpg");
     background-size: cover;
     background-blend-mode: multiply;
+    display: grid;
+    grid-template-rows: 100px 300px 600px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    grid-template-areas: "title ."
+        "image bio"
+        "service service"
+}
+
+.bio-title {
+    grid-area: title;
+    justify-self: center;
+    align-self: start;
+    color: var(--bc-color);
+}
+
+#me {
+    color: var(--secondary-color);
+}
+
+.bio {
+    grid-area: bio;
+    align-self: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    /* padding: 2em 3em; */
+}
+
+.bio h3 {
+    color: var(--secondary-color);
+}
+
+.bio p {
+    color: var(--bc-color);
+}
+
+#myPic {
+    width: 40%;
+    height: 80%;
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+    border: 3px solid var(--secondary-color);
+}
+
+
+.my-services {
+    grid-area: service;
     color: var(--bc-color);
     text-align: center;
 }
 
-.services__title {
+.my-services .services__title {
     color: var(--secondary-color);
     position: relative;
 }
 
-.services__title::after {
+.my-services h1::after {
     content: "";
     display: block;
-    width: 3em;
+    width: 15%;
     height: 1px;
     margin: 0.5em auto 1em;
-    color: red;
-
-}
-
-.service {
-    max-width: 500px;
-    margin: 0 auto;
+    background: var(--secondary-color)
 }
 
 .services {
     margin-bottom: 4em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
 }
 
-@media (min-width: 400px) {
+.service h3 {
+    font-weight: var(--fw-bold);
+    margin-bottom: 1em;
+}
+
+.service {
+    /* max-width: 500px; */
+    margin: 0 auto;
+    background-color: rgba(17, 29, 85, 0.76);
+    padding: 0.5rem;
+    border-bottom: 3px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* Projects */
+
+.work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.work a {
+    text-decoration: none;
+}
+
+.card {
+    height: 65%;
+    width: 100%;
+    background-image: url("./image/filiberto-santillan-1HCb2gPk3ik-unsplash.jpg");
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+.project__text,
+.project__tech {
+    display: block;
+    color: transparent;
+
+}
+
+
+
+.card::after {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(230, 111, 7, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: transform 200ms ease-in;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.card:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* .prjocet__img {
+    width: 100%;
+    border: 3px var(--primary-color) solid;
+    position: relative;
+}
+
+.project__img::after {
+    content: "";
+    
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+} */
+
+/* 
+.work .project__img {
+    background: url("./image/markus-spiske-MI9-PY5cyNs-unsplash.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.project__img h3 {
+    position: relative;
+    top: 40px;
+    left: 100px;
+    z-index: -1;
+  
+} */
+
+
+/* img:hover {
+
+
+    animation: shade 1s ease forwards;
+
+} */
+
+/* @keyframes shade {
+    100% {
+        opacity: 0.5;
+        border-color: var(--secondary-color);
+        transition: all 200ms ease-in;
+    }
+
+
+} */
+
+
+
+/* .project__title {
+    /* position: absolute; */
+/* top: auto;
+    right: auto; */
+/* bottom: auto; */
+/* position: relative;
+    bottom: 150px;
+    left: 100px; */
+.project__github,
+.project__link {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+
+}
+
+.project__github:hover,
+.project__link:hover {
+    background-color: var(--secondary-color);
+    font-weight: var(--fw-bold);
+    transition: background-color 250ms ease-out;
+}
+
+/* .imgTitle {
+    opacity: 0.5;
+    border-color: var(--secondary-color);
+    transition: all 200ms ease-in;
+
+
+} */
+
+
+
+
+
+
+
+@media (min-width: 800px) {
     .services {
         display: flex;
         max-width: 1000px;

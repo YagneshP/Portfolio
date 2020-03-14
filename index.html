@@ -48,85 +48,131 @@
     </section>
 
     <!-- About me -->
-    <!-- <section class="about">
-        <h1> About Me</h1>
-        <p> Hi! I am Yagnesh and I am a selftaught Web-developer from Ontario, Canada. I enthusiaste to develope
-            interactive and exciting Web-project. If you want to work with me, <a>Please Contact me.</a>
-        </p>
-    </section> -->
-
-    <!-- Services -->
-    <section class="my-services">
-        <h1 class="services__title"> What i do ?</h1>
-        <div class="services">
-            <div class="service">
-                <h3>Web Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum consequuntur ullam
-                    inventore voluptate illo, officiis repellat laudantium, voluptatem eum a magni reprehenderit qui
-                    fugit sit, reiciendis ipsum commodi ut?
-                </p>
-            </div>
-            <div class="service">
-                <h3>Project Management</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat eligendi maxime ipsum sint sequi
-                    voluptatum quibusdam optio, laborum accusantium rem adipisci saepe voluptatem temporibus provident
-                    aut dolorum dicta in hic?
-                </p>
-            </div>
-            <div class="service">
-                <h3>Front Devlopment</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, facere voluptatem. Sequi optio
-                    provident iste esse, suscipit perferendis vel dolorum, soluta corrupti eos voluptatibus obcaecati
-                    ipsum repellendus laudantium, fugiat accusamus!
-                </p>
-            </div>
+    <section class="about">
+        <div class="bio-title">
+            <h1> About <span id="me">Me</span></h1>
+            <p>Let me tell you something about my self...</p>
         </div>
-        <button class="btn"><a class="link" href="#">See my Work</a></button>
+
+        <div class="bio">
+            <h3>Bio</h3>
+            <p> Hi! I am Yagnesh and I am a selftaught Web-developer from Ontario, Canada. I enthusiaste to develope
+                interactive and exciting Web-project. If you want to work with me, <a>Please Contact me.</a>
+            </p>
+        </div>
+
+        <img id="myPic" src="image/DSC_0009 (800x533).jpg" alt="Yagnesh's photo">
+        <!-- Services -->
+        <section class="my-services">
+            <h1 class="services__title"> What i do ?</h1>
+            <div class="services">
+                <div class="service">
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum consequuntur ullam
+                        inventore voluptate illo, officiis repellat laudantium, voluptatem eum a magni reprehenderit qui
+                        fugit sit, reiciendis ipsum commodi ut?
+                    </p>
+                </div>
+                <div class="service">
+                    <h3>Project Management</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat eligendi maxime ipsum sint sequi
+                        voluptatum quibusdam optio, laborum accusantium rem adipisci saepe voluptatem temporibus
+                        provident
+                        aut dolorum dicta in hic?
+                    </p>
+                </div>
+                <div class="service">
+                    <h3>Front Devlopment</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, facere voluptatem. Sequi optio
+                        provident iste esse, suscipit perferendis vel dolorum, soluta corrupti eos voluptatibus
+                        obcaecati
+                        ipsum repellendus laudantium, fugiat accusamus!
+                    </p>
+                </div>
+            </div>
+            <button class="btn"><a class="link" href="#">See my Work</a></button>
+        </section>
     </section>
+
+
     <!-- Projects  -->
     <section class="project">
         <h1>Projects</h1>
-        <div class="project__item">
-            <img src="./image/filiberto-santillan-1HCb2gPk3ik-unsplash.jpg">
-            <h3 class="project__title">Book-Sare</h3>
-            <button class="project__github">
-                code
-            </button>
-            <button class="project__link">
-                See this Project
-            </button>
-            <p class="project__description">You have many Books? Let's share with other, who love to read. This Project
-                is about how you can share or ask for a book/books from other people and meet them.
-            </p>
-        </div>
-        <div class="project__item">
-            <img src="/image/florian-olivo-4hbJ-eymZ1o-unsplash.jpg">
-            <h3 class="project__title">YelpCamp</h3>
-            <button class="project__github">
-                code
-            </button>
-            <button class="project__link">
-                See this Project
-            </button>
-            <p class="project__description"> This is my first Projct which i have learned from UDEMY course. While
-                making this project i have learned RESTful Routing to Authentication.
-            </p>
-        </div>
-        <div class="project__item">
-            <img src="/image/markus-spiske-MI9-PY5cyNs-unsplash.jpg">
-            <h3 class="project__title">Forkify</h3>
-            <button class="project__github">
-                code
-            </button>
-            <button class="project__link">
-                See this Project
-            </button>
-            <p class="project__description">This is the another project form UDEMY course. I have learned API,ES6 module
-                and many more things , during this Project</p>
+        <div class="work">
 
+
+            <div class="project__item">
+                <div class="card project__img"">
+                    <a  href=" #">
+                    <div class="project__text">
+                        <h3 class="project__title">Book-Share
+                            <span class="project__tech">
+                                JavaScript / MongoDB
+                            </span>
+                        </h3>
+
+                    </div>
+
+                    <!-- <img src="./image/filiberto-santillan-1HCb2gPk3ik-unsplash.jpg"> -->
+                    </a>
+                </div>
+
+
+
+                <!-- <h3 class="project__title">Book-Sare</h3> -->
+                <button class="project__github">
+                    <a href="#"><i class="fab fa-github"></i> git hub</a>
+                </button>
+                <button class="project__link">
+                    <a href="#"><i class="fas fa-laptop-code"></i> See this Project</a>
+                </button>
+
+
+                <!-- <p class="project__description">You have many Books? Let's share with other, who love to read. This Project
+                is about how you can share or ask for a book/books from other people and meet them.
+            </p> -->
+            </div>
+            <div class="project__item">
+                <a class="project__img" href="#">
+                    <img src="/image/florian-olivo-4hbJ-eymZ1o-unsplash.jpg">
+                </a>
+
+                <h3 class="project__title">YelpCamp</h3>
+                <button class="project__github">
+                    <a href="#"><i class="fab fa-github"></i> git hub</a>
+                </button>
+                <button class="project__link">
+                    <a href="#"><i class="fas fa-laptop-code"></i> See this Project</a>
+                </button>
+
+                <!-- <p class="project__description"> This is my first Projct which i have learned from UDEMY course. While
+                making this project i have learned RESTful Routing to Authentication.
+            </p> -->
+            </div>
+            <div class="project__item">
+
+                <!-- <div class="project__img">
+                    
+                </div> -->
+                <a class="project__img" href="#">
+
+                    <img src="/image/markus-spiske-MI9-PY5cyNs-unsplash.jpg">
+
+                </a>
+                <h3 class="project__title">Forkify</h3>
+                <button class="project__github">
+                    <a href="#"><i class="fab fa-github"></i> git hub</a>
+                </button>
+                <button class="project__link">
+                    <a href="#"><i class="fas fa-laptop-code"></i> See this Project</a>
+                </button>
+
+                <!-- <p class="project__description">This is the another project form UDEMY course. I have learned API,ES6 module
+                and many more things , during this Project</p> -->
+            </div>
         </div>
     </section>
     <script src="./index.js"></script>
 </body>
 
-</htma
+</html>
