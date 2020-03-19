@@ -1,6 +1,6 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav__link");
-const projectImg = document.querySelectorAll(".project__img");
+const projectItem = document.querySelectorAll(".project__item ");
 
 
 navToggle.addEventListener("click", () => {
