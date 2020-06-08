@@ -33,6 +33,7 @@
     --fs-body: 1rem;
 }
 
+
 /* General styling */
 html {
     scroll-behavior: smooth;
@@ -49,7 +50,6 @@ body {
     font-size: var(--fs-body);
     line-height: 1.6;
     height: 100%;
-    /* margin: 0 auto; */
 }
 
 
@@ -72,7 +72,6 @@ section {
     background-color: rgb(138, 168, 93);
     padding: 0.5em 1.5em;
     border-radius: 5px;
-    /* margin-top: 2.5em; */
 }
 
 .btn:hover {
@@ -256,7 +255,6 @@ header {
 .social i:hover {
     color: var(--secondary-color);
     transform: scale(1.3);
-
 }
 
 .social a {
@@ -272,9 +270,6 @@ header {
     padding: 0px 5px;
 }
 
-
-
-
 /* my services */
 .about {
     background-color: var(--primary-color);
@@ -283,7 +278,6 @@ header {
     background-blend-mode: multiply;
     display: grid;
     grid-template-rows: 100px 200px 55rem;
-    /* grid-template-rows: 12.5rem 20rem minmax(55rem, 80rem); */
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 1rem;
     grid-template-areas: "title ."
@@ -328,7 +322,7 @@ header {
     grid-area: image;
     justify-self: center;
     align-self: center;
-    object-fit: fill;
+    /* object-fit: fill; */
     border-radius: 50%;
     border: 3px solid var(--secondary-color);
 }
@@ -375,48 +369,47 @@ header {
 .service h3 {
     font-weight: var(--fw-bold);
     margin-bottom: 1em;
+    color: var(--secondary-color);
 }
 
 .service {
     margin: 0 auto;
     background-color: rgba(17, 29, 85, 0.76);
     padding: 1.5rem;
-    /* padding: 10px; */
     border-bottom: 3px solid var(--secondary-color);
     border-radius: 5px;
-
 }
 
-/* .btn__work {
-    border: none;
-
-} */
-
 /* Projects */
+.project h1{
+    text-align: center;
+}
+.project h1::after {
+    content: "";
+    display: block;
+    width: 15%;
+    height: 2px;
+    margin: 0.05em auto 1em;
+    background: var(--primary-color)
+}
 .work {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
 }
-
 .project__item {
-    /* position: relative; */
-    /* height: auto; */
-    /* width: 100%; */
-    /* height: 200px; */
     text-align: center;
     background-color: rgb(228, 226, 226);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 
 
 
-/* .project__img {
-    height: 100%;
+.project__img {
+    height: 350px;
 
-} */
+}
 
 .card_btn {
     display: flex;
@@ -432,123 +425,35 @@ header {
     padding: 1em;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
-    /* transition: transform 200ms ease-in-out, background-color 200ms ease-in; */
     font-weight: var(--fw-reg);
     letter-spacing: normal;
     border: none;
     border-radius: 1.5em;
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
-    /* background-color: rgb(138, 168, 93); */
+   
 }
-
-/* 
-.project__github:hover,
-.project__link:hover {
-    transform: scale(1.1);
-    background-color: var(--secondary-color);
-} */
-
 .project__text,
 .project__tech {
     display: block;
-
 }
-
-
-/* 
-.card {
-    height: 200px;
-    width: 100%;
-    background-image: url("./image/filiberto-santillan-1HCb2gPk3ik-unsplash.jpg");
-    background-size: cover;
-    text-align: center;
-    padding-top: 50px;
-    position: relative;
-    z-index: 1;
-    border: 3px var(--secondary-color) solid;
-
-}
-
-#card1 {
-    background-image: url("./image/to-do-list-project-snap.JPG");
-}
-
-#card2 {
-    background-image: url("./image/florian-olivo-4hbJ-eymZ1o-unsplash.jpg");
-}
-
-
-
-
-
-
-
-.project__text,
-.project__tech {
-    display: block;
-    color: transparent;
-    transition: color 250ms ease-in 250ms;
-}
-
-.card:hover .project__text {
-    color: rgb(101, 243, 7);
-}
-
-.card:hover .project__tech {
-    color: red;
-}
-
-.card::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(230, 111, 7, 0.5);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: transform 200ms ease-in;
-    transform: scaleX(0);
-    transform-origin: right;
-}
-
-.card:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-.project__github,
-.project__link {
-    display: block;
-    width: 100%;
-    padding: 0.5em;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-
-}
-
-.project__github:hover,
-.project__link:hover {
-    background-color: var(--secondary-color);
-    font-weight: var(--fw-bold);
-    transition: background-color 250ms ease-out;
-} */
 
 /* Contact */
 
 .contact {
-    padding: 2em 2em;
+    padding: 1em 1em;
     background-color: silver;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items:center;
     font-size: var(--fs-body)
 }
 
 .contact .detail {
-    padding-top: 1em;
+  padding-top: 1em;
 }
+
+
 
 .secondary-color {
     color: var(--secondary-color);
@@ -563,19 +468,7 @@ header {
 }
 
 /* for smartphone */
-/* @media screen and (max-width: 350px) {
-    .home h3 {
-        display: block;
-    }
 
-    #job {
-        display: block;
-        transform: rotate(0deg);
-        transform-origin: 35px 45px;
-        width: 200px;
-        margin: 0 auto;
-    }
-} */
 
 .card {
     position: relative;
@@ -588,24 +481,16 @@ header {
     right: 0;
     background-color: rgb(20, 23, 24);
     overflow: hidden;
-    /* width: 100%; */
     height: 0;
     transition: .5s ease;
 }
-
-
-
-
-
 .project_container:hover .project__text {
     bottom: 0;
     height: 100%;
     opacity: 0.9;
 }
-
 .project__title {
-    color: white;
-    /* font-size: 20px; */
+    color: #43abc9;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -616,13 +501,8 @@ header {
 }
 
 .project__tech {
-    color: red;
+    color: #da621e;
 }
-
-
-
-
-
 
 @media screen and (max-width: 500px) {
     :root {
@@ -631,32 +511,16 @@ header {
         --fs-h3: 1.3rem;
         --fs-body: 0.9rem;
     }
-
-
     .card_btn {
         flex-direction: column;
-        /* position: absolute; */
-
     }
-
     .project__github:hover,
     .project__link:hover {
         transform: scale(1);
-        /* background-color: var(--secondary-color); */
     }
-
-    /* .project_container {
-        height: 40vh;
-    } */
-
     .project__img {
-
         height: 40vh;
     }
-
-
-
-
     .contact {
         font-size: 16px;
     }
@@ -676,10 +540,8 @@ header {
     }
 
     .bio-title {
-
         justify-content: center;
         align-self: center;
-
     }
 
     #myPic {
@@ -699,12 +561,6 @@ header {
         flex-direction: column;
 
     }
-
-    /* .my-services {
-        display: grid;
-        grid-template-rows: auto 75% auto;
-        padding-bottom: 15px;
-    } */
 
     .service {
         margin-top: 2em;
@@ -730,12 +586,6 @@ header {
         --fs-h3: 2.3rem;
         --fs-body: 1.2rem;
     }
-
-    /* .my-services {
-        display: grid;
-        grid-template-rows: auto 80% auto;
-        padding-bottom: 0;
-    } */
 }
 
 @media screen and (min-width: 1450px)and (max-width: 3000px) {
@@ -752,20 +602,7 @@ header {
     }
 
     #myPic {
-        width: 25%;
-        /* width: 20%; */
+        /* width: 25%; */
         object-fit: fill;
     }
-
-    /* .card {
-        height: 40vh;
-    } */
-
-    /* .my-services {
-        display: grid;
-        grid-template-rows: auto 60% auto;
-        padding-bottom: 0;
-    } */
 }
-
-/* Project styling */
