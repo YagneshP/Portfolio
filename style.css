@@ -411,17 +411,25 @@ background-clip: text;
 color: transparent;
 
 }
-.portfolio-description .cta{
-display: inline-block;
-margin:2.5rem 1.2rem;
-padding: 1rem 2rem;
-font-size: 1.5rem;
-border-radius: .8rem;
-border: none;
-text-transform:uppercase;
-color:#fafafa;
-transition: color 650ms;
-background-color: #fd57bf;
+.portfolio-description .cta { 
+    margin:2.5rem 1.2rem;
+    font-size: 1.5rem;
+    border-radius: .8rem;
+    border: none;
+    text-transform:uppercase;
+    color:#fafafa;
+    transition: color 650ms;
+   background-color: #fd57bf;
+}
+.portfolio-description .cta .cta-link{
+    padding: 1rem 2rem; 
+    display: inline-block;
+    margin: 0;
+    border-radius: .8rem;
+    border: none;
+}
+.portfolio-description .cta .cta-link i{
+    margin-right: 0.5rem;
 }
 .portfolio-description .cta:hover,.portfolio-description .cta:hover > .cta-link{
 color:#221e3f;
@@ -626,9 +634,12 @@ body{
 .time-line .date::after{
     left:-5.9rem;
 } */
-.portfolio-description .cta{
+.portfolio-description .cta {
     width:100%;
     margin:1.5rem 0;
+}
+.portfolio-description .cta .cta-link{
+    width: 100%;
 }
 }
 @media screen and (max-width:630px){
