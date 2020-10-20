@@ -536,6 +536,7 @@ outline-color: #fd57bf;
 }
 input[type="submit"] {
 width:initial;
+margin-top: 1rem;
 background-color: #fd57bf;
 color: #eee;
 padding:1rem 2rem;
