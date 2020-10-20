@@ -315,7 +315,7 @@
                 <h6>Let's Work together</h6>
             </div>
             <div class="contact-container">
-                <form>
+                <form name="query-form" action="POST" data-netlify="true" data-netlify-recaptcha="true">
                     <label for="name">Name:</label>
                     <input type="text" id="name" placeholder="Enter Your Name...." required />
                     <label for="email">Email:</label>
@@ -328,6 +328,7 @@
                     </select>
                     <label for="subject">Subject:</label>
                     <textarea name="subject" id="subject" col="10" row="10"></textarea>
+                    <div data-netlify-recaptcha="true"></div>
                     <input type="submit" value="Submit" />
                 </form>
                 <div class="contact-info">
