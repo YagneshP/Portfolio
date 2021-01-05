@@ -415,8 +415,7 @@ header {
     display: flex;
     justify-content: space-around;
     padding: 0.5em;
-    /* margin-top: 0.2em;
-    margin-bottom: 0.2em; */
+   
 }
 
 .project__github,
@@ -602,7 +601,7 @@ header {
     }
 
     #myPic {
-        /* width: 25%; */
+       
         object-fit: fill;
     }
 }

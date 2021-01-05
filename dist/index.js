@@ -13,14 +13,3 @@ navLinks.forEach(link => {
     })
 });
 
-// projectImg.forEach(img => {
-//     img.addEventListener("mouseenter", () => {
-//         img.classList.add("imgTitle");
-//     })
-// });
-
-// projectImg.forEach(img => {
-//     img.addEventListener("mouseleave", () => {
-//         img.classList.remove("imgTitle");
-//     })
-// });
