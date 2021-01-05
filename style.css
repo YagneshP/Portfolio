@@ -626,15 +626,7 @@ body{
 .icon-container i{
     font-size:4rem;
 }
-/* .time-line ul{
-    margin:0 0 0 auto;
-}
-.time-line .date::before{
-    left:-20rem;
-}
-.time-line .date::after{
-    left:-5.9rem;
-} */
+
 .portfolio-description .cta {
     width:100%;
     margin:1.5rem 0;
@@ -680,12 +672,7 @@ img{
     margin:0;
     order:2;
 }
-/* .time-line p{
-    font-size:1.6rem;
-}
-.time-line .date::before{
-    font-size:1.4rem;
-} */
+
 form{
     width:100%;
 }
@@ -696,9 +683,7 @@ form{
 
 @media screen and (max-width:400px){
 
-/* img{
-    width: %;
-} */
+
 .menu-toggler{
     width:3.8rem
 }
@@ -711,9 +696,7 @@ form{
 .profile-img{
     align-self: center;
 }
-/* .about-detail p{
-font-size: 1.4rem;
-} */
+
 
 .about-heading h1 {
 font-size:6rem;

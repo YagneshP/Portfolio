@@ -49,7 +49,7 @@ TypeWriter.prototype.type = function () {
         this.txt = fulltxt.substring(0, this.txt.length + 1)
 
     }
-    // $(this.txtElement).after(`${this.text}`)
+
     $(this.txtElement).html(`<span class="txt">${this.txt}</span>`);
     let typeSpeed = 300;
     if (this.isDeleting) {
@@ -68,7 +68,6 @@ TypeWriter.prototype.type = function () {
 }
 function init() {
     const txtElement = $(".txt-type");
-    // const words = JSON.parse(txtElement.getAttribute("data-words"));// 
     const words = txtElement.data("words")
     const wait = txtElement.data("wait");
     // init typewriter
