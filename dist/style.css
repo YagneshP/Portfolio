@@ -438,60 +438,7 @@ cursor: pointer;
 }
 
 /* Portfolio styles end */
-/* timeline styles start */
-/* .time-line ul{
-border-left:4px solid #ffe838;
-border-radius: .8rem;
-background-color: rgba(255, 255, 255, .05);
-margin:0 auto;
-position: relative;
-padding: 5rem;
-list-style: none;
-text-align: left;
-width:70%;
-}
-.time-line h1{
-font-size:2rem;
-text-transform: uppercase;
-font-weight: 300;
-margin-bottom: 1rem;
-opacity:0.3;
-}
-.time-line .date{
-border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-margin-bottom: 1rem;
-padding-bottom:1rem;
-position: relative;
-}
-.time-line .date:last-of-type{
-padding-bottom: 0;
-margin-bottom: 0;
-border:none;
-}
-.time-line .date::before,
-.time-line .date::after{
-position: absolute;
-display: block;
-top:50%;
-transform: translateY( -50% );
-}
-.time-line .date::before{
-content: attr(data-date);
-left:-21rem;
-text-align: center;
-min-width: 12rem;
-font-size: 1.5rem;
-}
-.time-line .date::after{
-content: "";
-box-shadow: 0 0 0 4px #fd57bf;
-border-radius: 100%;
-left:-8rem;
-height: 1.5rem;
-width:1.5rem;
-background-color: #313534;
-} */
-/* timeline styles end */
+
 /* Contact form styles start */
 .contact{
 background-color: #221e3f;
