@@ -18,7 +18,7 @@ html{
 body{
     width: 100%;
     height:100%;
-    background: linear-gradient(rgba(19, 22, 57, 0.9),rgba(27, 46, 79, 0.9)) ,url("images/laptop-bg.jpg") no-repeat center fixed;
+    background: linear-gradient(rgba(19, 22, 57, 0.9),rgba(27, 46, 79, 0.9)) ,url("/image/laptop-bg.jpg") no-repeat center fixed;
     background-size: cover;
     color:#eee;
     
@@ -56,7 +56,7 @@ position: relative;
 text-align:center;
 margin-bottom:8rem;
 }
-.section-heading h1{
+.section-heading h2{
 font-size:3.5rem;
 color: rgba(255, 255, 255, .3);
 text-transform:uppercase;
@@ -64,8 +64,8 @@ font-weight:300;
 position: relative;
 margin-bottom:1rem;
 }
-.section-heading h1::before,
-.section-heading h1::after{
+.section-heading h2::before,
+.section-heading h2::after{
 content: "";
 position: absolute;
 
@@ -73,13 +73,13 @@ left:50%;
 transform:translateX(-50%);
 background-color: rgba(255, 255, 255, .75);
 }
-.section-heading h1::before{
+.section-heading h2::before{
 width:10rem;
 height:3px;
 bottom: -.5rem;
 border-radius: .8rem;
 }
-.section-heading h1::after{
+.section-heading h2::after{
 width:1.5rem;
 height:1.5rem;
 border-radius: 100%;
@@ -122,9 +122,7 @@ justify-content: space-evenly;
 flex-direction: column;
 align-items: center;
 }
-/* li{
-margin:0 2rem;
-} */
+
 
 li{
 margin:1.5rem 0;
@@ -197,7 +195,7 @@ text-align: center;
 z-index:1;
 /* animation: yagnesh 2s ease-in; */
 }
-.landing-text h1{
+.landing-text h2{
 font-size:10rem;
 font-family: 'Special Elite', cursive,sans-serif ;
 background: linear-gradient(to top, #ffe838, #fd57bf);
@@ -238,7 +236,7 @@ text-transform: uppercase;
 line-height:0;
 margin-bottom: 6rem;
 }
-.about-heading h1{
+.about-heading h2{
 font-size:10rem;
 opacity: .3;
 }
@@ -300,7 +298,7 @@ align-items: center;
 padding: 3rem;
 position: relative;
 }
-.skill h1{
+.skill h2{
 text-transform: uppercase;
 letter-spacing: 2px;
 margin:2rem -2px 2rem 0;
@@ -358,7 +356,7 @@ background-size: var(--background-size);
 animation: var(--animation-properties);
 }
 .skill i{
-/* font-size: 3rem; */
+
 margin-bottom:2rem;
 padding:1rem;
 background: var(--background-color);
@@ -411,27 +409,26 @@ background-clip: text;
 color: transparent;
 
 }
-.portfolio-description .cta { 
-    margin:2.5rem 1.2rem;
-    font-size: 1.5rem;
-    border-radius: .8rem;
-    border: none;
-    text-transform:uppercase;
-    color:#fafafa;
-    transition: color 650ms;
-   background-color: #fd57bf;
+
+.portfolio-description  .cta-link{
+margin:2.5rem 1.2rem;
+padding: 1rem 2rem; 
+display: inline-block;
+text-transform:uppercase;
+border-radius: .8rem;
+border: none;
+font-size: 1.9rem;
+font-weight: 500;
+background-color: #fd57bf;
+color:#fafafa;
+transition: color 650ms;
+text-align:center;
 }
-.portfolio-description .cta .cta-link{
-    padding: 1rem 2rem; 
-    display: inline-block;
-    margin: 0;
-    border-radius: .8rem;
-    border: none;
+.portfolio-description .cta-link i{
+margin-right: 0.5rem;
 }
-.portfolio-description .cta .cta-link i{
-    margin-right: 0.5rem;
-}
-.portfolio-description .cta:hover,.portfolio-description .cta:hover > .cta-link{
+
+.portfolio-description .cta-link:hover{
 color:#221e3f;
 background-color: #ffe838;
 cursor: pointer;
@@ -483,7 +480,6 @@ outline-color: #fd57bf;
 }
 input[type="submit"] {
 width:initial;
-margin-top: 1rem;
 background-color: #fd57bf;
 color: #eee;
 padding:1rem 2rem;
@@ -538,14 +534,16 @@ margin:auto;
 /* footer styles end */
 
 /* media queries */
+@media screen and (max-width: 980px){
+.portfolio-description .cta-link{
+    width: 100%;
+    margin:1.5rem 0;
+}
+}
 
 @media screen and (max-width: 850px){
-body{
-  
-    background: linear-gradient(rgba(19, 22, 57, 0.9),rgba(27, 46, 79, 0.9)) ,url("images/laptop-bg.jpg") no-repeat center fixed;
-    background-size: cover;
-}
-.landing-text h1{
+
+.landing-text h2{
     font-size: 6rem;
 }
 .landing-text h6{
@@ -558,10 +556,10 @@ body{
 .nav-link{
     font-size: 3.2rem;
 }
-.about-heading h1{
+.about-heading h2{
     font-size:8rem;
 }
-.section-heading h1{
+.section-heading h2{
     font-size:3.4rem;
 }
 .about-detail .nav-list{
@@ -574,13 +572,11 @@ body{
     font-size:4rem;
 }
 
-.portfolio-description .cta {
+/* .portfolio-description .cta {
     width:100%;
     margin:1.5rem 0;
-}
-.portfolio-description .cta .cta-link{
-    width: 100%;
-}
+} */
+
 }
 @media screen and (max-width:630px){
 .menu-toggler{
@@ -593,7 +589,7 @@ img{
 .profile-img{
     text-align: center;
 }
-.landing-text h1{
+.landing-text h2{
     font-size:5.5rem;
 }
 .landing-text h6{
@@ -630,7 +626,6 @@ form{
 
 @media screen and (max-width:400px){
 
-
 .menu-toggler{
     width:3.8rem
 }
@@ -645,7 +640,7 @@ form{
 }
 
 
-.about-heading h1 {
+.about-heading h2 {
 font-size:6rem;
 }
 .about-detail li {
